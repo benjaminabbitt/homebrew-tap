@@ -5,21 +5,21 @@
 class ClaudeLimits < Formula
   desc "CLI tool to check Claude.ai usage limits for Pro/Max subscriptions"
   homepage "https://github.com/benjaminabbitt/claude-limits"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/benjaminabbitt/claude-limits/releases/download/v0.1.1/claude-limits_0.1.1_darwin_amd64.tar.gz"
-      sha256 "19253fddde29703f7dacac2afe68d7b386bfb5022dd95c01c3c1325ba4e4ef90"
+      url "https://github.com/benjaminabbitt/claude-limits/releases/download/v0.2.0/claude-limits_0.2.0_darwin_amd64.tar.gz"
+      sha256 "4a4adf7db1c88d8d97c77c7cca76feb89e646b7021395b1e54bfe190452b5e76"
 
       def install
         bin.install "claude-limits"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/benjaminabbitt/claude-limits/releases/download/v0.1.1/claude-limits_0.1.1_darwin_arm64.tar.gz"
-      sha256 "8c55c4bbeed866db9ae8a199f53af0beaba836d4e81746dc13da4d34dac384f0"
+      url "https://github.com/benjaminabbitt/claude-limits/releases/download/v0.2.0/claude-limits_0.2.0_darwin_arm64.tar.gz"
+      sha256 "18146d06a8d30667476ca46a2411a7ec223a5839222cf49043f178682eb7ab3a"
 
       def install
         bin.install "claude-limits"
@@ -29,15 +29,15 @@ class ClaudeLimits < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/benjaminabbitt/claude-limits/releases/download/v0.1.1/claude-limits_0.1.1_linux_amd64.tar.gz"
-      sha256 "8a509124f4a9ea59d4449a4ff54e63d3b0cfcbf2dfbbeda86cfd6d6b06f895e3"
+      url "https://github.com/benjaminabbitt/claude-limits/releases/download/v0.2.0/claude-limits_0.2.0_linux_amd64.tar.gz"
+      sha256 "98a65b5342247f61788fda15265bf3afa1a2c37b766708cf62a48e32d62c7d94"
       def install
         bin.install "claude-limits"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/benjaminabbitt/claude-limits/releases/download/v0.1.1/claude-limits_0.1.1_linux_arm64.tar.gz"
-      sha256 "8a8245fce4134a77db2847fd53cdf2024b97933e94a543b3414ea521e0116df9"
+      url "https://github.com/benjaminabbitt/claude-limits/releases/download/v0.2.0/claude-limits_0.2.0_linux_arm64.tar.gz"
+      sha256 "b51710e7333f7733be4a12d95527e0021c3e4f5962a30d6ee2e252a8043e5a85"
       def install
         bin.install "claude-limits"
       end
